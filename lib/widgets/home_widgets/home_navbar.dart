@@ -1,4 +1,5 @@
 import 'package:doctor_app/constants/home_const.dart';
+import 'package:doctor_app/screens/doctors_screen.dart';
 import 'package:doctor_app/screens/home_screen.dart';
 import 'package:doctor_app/screens/message_screen.dart';
 import 'package:doctor_app/screens/video_call_screen.dart';
@@ -36,7 +37,9 @@ class HomeNavBar extends StatelessWidget {
                 const Icon(Icons.schedule_send_outlined, color: homeSecondary),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, DoctorsScreen.routeName);
+            },
             icon: const Icon(Icons.share, color: homeSecondary),
           ),
           IconButton(

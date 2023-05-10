@@ -1,4 +1,5 @@
 import 'package:doctor_app/screens/doc_details_screen.dart';
+import 'package:doctor_app/screens/doctors_screen.dart';
 import 'package:doctor_app/screens/home_screen.dart';
 import 'package:doctor_app/screens/message_screen.dart';
 import 'package:doctor_app/screens/video_call_screen.dart';
@@ -19,6 +20,9 @@ class Routes {
 
       case MessageScreen.routeName:
         return MaterialPageRoute(builder: (context) => const MessageScreen());
+
+      case DoctorsScreen.routeName:
+        return MaterialPageRoute(builder: (context) => const DoctorsScreen());
 
       default:
         null;

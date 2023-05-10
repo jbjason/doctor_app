@@ -78,3 +78,15 @@ Widget getTitleSeeAllText(String title, Function onTap) => Row(
         ),
       ],
     );
+
+Container getButtonStyle(Widget child) => Container(
+      height: kBottomNavigationBarHeight,
+      margin: const EdgeInsets.only(left: 15, right: 15, bottom: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 15),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(6),
+        gradient: getHomeGradient(const Color(0xFF80DDEA)),
+        boxShadow: bodyShadow,
+      ),
+      child: child,
+    );
