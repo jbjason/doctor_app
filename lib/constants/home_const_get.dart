@@ -90,3 +90,8 @@ Container getButtonStyle(Widget child) => Container(
       ),
       child: child,
     );
+
+IconButton getBackButton(BuildContext context) => IconButton(
+      onPressed: () => Navigator.pop(context),
+      icon: const Icon(Icons.arrow_back_ios_new, color: homeAppBar),
+    );

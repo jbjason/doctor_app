@@ -10,10 +10,7 @@ class DocDAppBar extends StatelessWidget {
     return SliverAppBar(
       backgroundColor: ashhLight,
       pinned: true,
-      leading: IconButton(
-        onPressed: () => Navigator.pop(context),
-        icon: const Icon(Icons.arrow_back_ios_new, color: homeAppBar),
-      ),
+      leading: getBackButton(context),
       title: const Text('Dr. Info', style: TextStyle(color: homeAppBar)),
       actions: [
         Row(

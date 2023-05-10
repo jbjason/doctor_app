@@ -2,6 +2,7 @@ import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/screens/doctors_screen.dart';
 import 'package:doctor_app/screens/home_screen.dart';
 import 'package:doctor_app/screens/message_screen.dart';
+import 'package:doctor_app/screens/profile_screen.dart';
 import 'package:doctor_app/screens/video_call_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +44,9 @@ class HomeNavBar extends StatelessWidget {
             icon: const Icon(Icons.share, color: homeSecondary),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, ProfileScreen.routeName);
+            },
             icon: const Icon(Icons.people_outline, color: homeSecondary),
           ),
         ],

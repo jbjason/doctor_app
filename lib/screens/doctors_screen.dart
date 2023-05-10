@@ -1,4 +1,5 @@
 import 'package:doctor_app/constants/home_const.dart';
+import 'package:doctor_app/constants/home_const_get.dart';
 import 'package:doctor_app/widgets/common_widgets/doc_search_field.dart';
 import 'package:doctor_app/widgets/doc_widgets/doc_fliter_icon.dart';
 import 'package:doctor_app/widgets/home_widgets/home_doctor_list.dart';
@@ -19,10 +20,7 @@ class DoctorsScreen extends StatelessWidget {
             centerTitle: true,
             elevation: 10,
             pinned: true,
-            leading: IconButton(
-              onPressed: () => Navigator.pop(context),
-              icon: const Icon(Icons.arrow_back_ios_new, color: homeAppBar),
-            ),
+            leading: getBackButton(context),
             title: const Text(
               'Our Providers',
               style: TextStyle(color: homeAppBar),
