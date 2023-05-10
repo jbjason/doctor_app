@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:doctor_app/constants/home_const.dart';
-import 'package:doctor_app/constants/home_const2.dart';
+import 'package:doctor_app/constants/home_const_get.dart';
 
 class HomeBOfferContainer extends StatelessWidget {
   const HomeBOfferContainer({super.key});
@@ -12,7 +12,7 @@ class HomeBOfferContainer extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       decoration: BoxDecoration(
         // B2EBF2 80DDEA 4DD0E1
-        gradient: getHomeGradient(const Color(0xFF80DDEA)),
+        gradient: getHomeGradient(homePrimaryColor),
         boxShadow: bodyShadow,
         borderRadius: BorderRadius.circular(21),
       ),

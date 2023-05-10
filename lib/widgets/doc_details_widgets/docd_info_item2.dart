@@ -1,7 +1,7 @@
 import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/constants/home_const.dart';
-import 'package:doctor_app/constants/home_const2.dart';
+import 'package:doctor_app/constants/home_const_get.dart';
 
 class DocDInfoItem2 extends StatelessWidget {
   const DocDInfoItem2(
@@ -14,33 +14,38 @@ class DocDInfoItem2 extends StatelessWidget {
     final morningList = ['10:10am', '10:30am', '10:50am', '11:20am', '11:40am'];
     final afterNoonList = ['2:00pm', '2:20pm', '2:40pm'];
     final eveningList = ['7:00pm', '7:30pm', '8:00pm', '8:30pm', '9:00pm'];
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        ValueListenableBuilder(
-          valueListenable: selectedDate,
-          builder: (context, _, __) => CalendarTimeline(
-            initialDate: selectedDate.value,
-            firstDate: DateTime.now(),
-            lastDate: DateTime.now().add(const Duration(days: 60)),
-            onDateSelected: (date) => selectedDate.value = date,
-            monthColor: Colors.grey,
-            dayColor: Colors.grey,
-            activeDayColor: Colors.white,
-            dayNameColor: Colors.grey,
-            activeBackgroundDayColor: homeAppBar,
-            dotsColor: Colors.white,
-            locale: 'en',
-          ),
+    return SingleChildScrollView(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ValueListenableBuilder(
+              valueListenable: selectedDate,
+              builder: (context, _, __) => CalendarTimeline(
+                initialDate: selectedDate.value,
+                firstDate: DateTime.now(),
+                lastDate: DateTime.now().add(const Duration(days: 60)),
+                onDateSelected: (date) => selectedDate.value = date,
+                monthColor: Colors.grey,
+                dayColor: Colors.grey,
+                activeDayColor: Colors.white,
+                dayNameColor: Colors.grey,
+                activeBackgroundDayColor: homeAppBar,
+                dotsColor: Colors.white,
+                locale: 'en',
+              ),
+            ),
+            const SizedBox(height: 25),
+            _getSlotTitleAndList('Morning Slots', morningList),
+            const SizedBox(height: 25),
+            _getSlotTitleAndList('AfterNoon Slots', afterNoonList),
+            const SizedBox(height: 25),
+            _getSlotTitleAndList('Evening Slots', eveningList),
+            const SizedBox(height: 30),
+          ],
         ),
-        const SizedBox(height: 25),
-        _getSlotTitleAndList('Morning Slots', morningList),
-        const SizedBox(height: 25),
-        _getSlotTitleAndList('AfterNoon Slots', afterNoonList),
-        const SizedBox(height: 25),
-        _getSlotTitleAndList('Evening Slots', eveningList),
-        const SizedBox(height: 30),
-      ],
+      ),
     );
   }
 

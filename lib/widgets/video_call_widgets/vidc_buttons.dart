@@ -30,30 +30,44 @@ class VidCButtons extends StatelessWidget {
           children: [
             const SizedBox(width: 50),
             const VidCMuteButton(),
-            Container(
-              height: 65,
-              width: 65,
-              padding: const EdgeInsets.all(4),
-              decoration: const BoxDecoration(
-                  shape: BoxShape.circle, color: Colors.white12),
-              child: Container(
-                padding: const EdgeInsets.all(3),
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Colors.white24,
-                ),
-                child: Container(
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.redAccent,
-                  ),
-                  child: const Icon(Icons.phone, color: Colors.white),
-                ),
-              ),
-            ),
+            const VidCRedButton(),
             VidCVideoButton(onVideo: onVideo),
             const SizedBox(width: 50),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class VidCRedButton extends StatelessWidget {
+  const VidCRedButton({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () => Navigator.pop(context),
+      child: Container(
+        height: 65,
+        width: 65,
+        padding: const EdgeInsets.all(4),
+        decoration:
+            const BoxDecoration(shape: BoxShape.circle, color: Colors.white12),
+        child: Container(
+          padding: const EdgeInsets.all(3),
+          decoration: const BoxDecoration(
+            shape: BoxShape.circle,
+            color: Colors.white24,
+          ),
+          child: Container(
+            decoration: const BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.redAccent,
+            ),
+            child: const Icon(Icons.phone, color: Colors.white),
+          ),
         ),
       ),
     );

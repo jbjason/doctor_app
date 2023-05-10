@@ -7,12 +7,8 @@ class DocDInfoCategory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<String> aboutList = [
-      'OverView',
-      'Clinic & Fees',
-      'Schedule',
-      'Reveiws'
-    ];
+    final size = MediaQuery.of(context).size;
+    const aboutList = ['OverView', 'Schedule', 'Reveiws'];
     return ValueListenableBuilder(
       valueListenable: selectedCategory,
       builder: (context, selected, __) {
@@ -34,10 +30,12 @@ class DocDInfoCategory extends StatelessWidget {
                 (i) => InkWell(
                   onTap: () => selectedCategory.value = i,
                   child: Container(
+                    // removing margin 20 & padding 10 of parent Container
+                    width: (size.width - (20 * 2 + 10 * 2)) / 3,
                     padding: const EdgeInsets.symmetric(
                         horizontal: 20, vertical: 10),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(7.5),
+                      borderRadius: BorderRadius.circular(5.5),
                       color: selected == i ? homeAppBar : Colors.transparent,
                     ),
                     child: Text(
