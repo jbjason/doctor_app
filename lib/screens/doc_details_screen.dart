@@ -1,5 +1,5 @@
 import 'package:doctor_app/widgets/doc_details_widgets/docd_appbar.dart';
-import 'package:doctor_app/widgets/doc_details_widgets/docd_info_item4.dart';
+import 'package:doctor_app/widgets/doc_details_widgets/docd_info_item3.dart';
 import 'package:doctor_app/widgets/doc_details_widgets/docd_top_delegate.dart';
 import 'package:doctor_app/widgets/doc_details_widgets/docd_info_item1.dart';
 import 'package:doctor_app/widgets/doc_details_widgets/docd_info_item2.dart';

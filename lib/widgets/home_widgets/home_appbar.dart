@@ -11,7 +11,7 @@ class HomeAppbar extends StatelessWidget {
       elevation: 10,
       pinned: true,
       title: Image.asset(
-        'assets/welcome_logo2.png',
+        'assets/welcome_logo.png',
         height: 60,
         width: size.width * .4,
         fit: BoxFit.contain,

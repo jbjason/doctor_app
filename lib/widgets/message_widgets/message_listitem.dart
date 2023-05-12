@@ -41,10 +41,13 @@ class MessageListItem extends StatelessWidget {
                       child: Text(
                         doctor.title,
                         overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.headline4!.copyWith(
-                            fontSize: 15,
-                            color: homeTextColor,
-                            fontWeight: FontWeight.w900),
+                        style: Theme.of(context)
+                            .textTheme
+                            .headlineMedium!
+                            .copyWith(
+                                fontSize: 15,
+                                color: homeTextColor,
+                                fontWeight: FontWeight.w900),
                       ),
                     ),
                     // Message
@@ -55,7 +58,7 @@ class MessageListItem extends StatelessWidget {
                         overflow: TextOverflow.ellipsis,
                         style: Theme.of(context)
                             .textTheme
-                            .bodyText2!
+                            .bodyMedium!
                             .copyWith(fontSize: 10.5, color: Colors.grey),
                       ),
                     ),
@@ -73,7 +76,7 @@ class MessageListItem extends StatelessWidget {
                     // duration of msg
                     Text(
                       '1 hour ago',
-                      style: Theme.of(context).textTheme.bodyText2,
+                      style: Theme.of(context).textTheme.bodyMedium,
                     ),
                     const SizedBox(height: 8),
                     // 1 new msg notification_icon
