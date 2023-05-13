@@ -14,11 +14,13 @@ class ProfileItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
       padding: const EdgeInsets.symmetric(horizontal: 15),
-      decoration: const BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.horizontal(
+      decoration: BoxDecoration(
+        gradient: bodyGradient,
+        boxShadow: bodyShadow,
+        border: Border.all(color: Colors.grey[300]!),
+        borderRadius: const BorderRadius.horizontal(
           left: Radius.circular(18),
           right: Radius.circular(50),
         ),

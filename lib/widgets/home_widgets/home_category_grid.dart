@@ -32,7 +32,7 @@ class HomeCategoryGrid extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                i == 0 ? '' : categories[i].title,
+                categories[i].title,
                 overflow: TextOverflow.ellipsis,
                 style: const TextStyle(color: homeAppBar, fontSize: 11),
               ),

@@ -27,7 +27,18 @@ final bodyShadow = [
   ),
 ];
 
-final categories = [
+const categories = [
+  Category(img: 'assets/category/cardiology.png', title: 'Cardiology'),
+  Category(img: 'assets/category/dentist.png', title: 'Dentist'),
+  Category(img: 'assets/category/dermathology.png', title: 'Dermathology'),
+  Category(img: 'assets/category/neurology.png', title: 'Neurology'),
+  Category(img: 'assets/category/nutrition.png', title: 'Nutrition'),
+  Category(img: 'assets/category/psychology.png', title: 'Psychology'),
+  Category(img: 'assets/category/pulmonary.png', title: 'Pulmonary'),
+  Category(img: 'assets/category/urology.png', title: 'Urology'),
+];
+
+final categoriesOffice = [
   const Category(
       img: 'assets/category/category_selected.png', title: 'Cardiology'),
   const Category(img: 'assets/category/category.png', title: 'Dentist'),
