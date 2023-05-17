@@ -7,6 +7,7 @@ const homePrimaryColor = Color(0xFF80DDEA);
 const homeSecondary = Color.fromARGB(255, 94, 111, 136);
 const ashhLight = Color(0xFFECF6FF);
 const homeTextColor = Color(0xFF292F51);
+const homeTextSecondary = Colors.grey;
 
 const bodyGradient = LinearGradient(
   begin: Alignment.topLeft,

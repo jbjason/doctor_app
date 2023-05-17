@@ -2,6 +2,7 @@ import 'package:doctor_app/screens/doc_details_screen.dart';
 import 'package:doctor_app/screens/doctors_screen.dart';
 import 'package:doctor_app/screens/home_screen.dart';
 import 'package:doctor_app/screens/message_screen.dart';
+import 'package:doctor_app/screens/p_dashboard.dart';
 import 'package:doctor_app/screens/profile_screen.dart';
 import 'package:doctor_app/screens/video_call_screen.dart';
 import 'package:flutter/material.dart';
@@ -27,6 +28,9 @@ class Routes {
 
       case ProfileScreen.routeName:
         return MaterialPageRoute(builder: (context) => const ProfileScreen());
+
+      case PHomeScreen.routeName:
+        return MaterialPageRoute(builder: (context) => const PHomeScreen());
 
       default:
         null;
