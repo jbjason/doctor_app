@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:doctor_app/constants/home_const_get.dart';
 
-class DashDBodyItem extends StatelessWidget {
-  const DashDBodyItem({
+class DashTBodyItem extends StatelessWidget {
+  const DashTBodyItem({
     Key? key,
     required this.count,
     required this.icon,

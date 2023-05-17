@@ -2,7 +2,7 @@ import 'package:doctor_app/screens/doc_details_screen.dart';
 import 'package:doctor_app/screens/doctors_screen.dart';
 import 'package:doctor_app/screens/home_screen.dart';
 import 'package:doctor_app/screens/message_screen.dart';
-import 'package:doctor_app/screens/p_dashboard.dart';
+import 'package:doctor_app/screens/p_dashboard_screen.dart';
 import 'package:doctor_app/screens/profile_screen.dart';
 import 'package:doctor_app/screens/video_call_screen.dart';
 import 'package:flutter/material.dart';

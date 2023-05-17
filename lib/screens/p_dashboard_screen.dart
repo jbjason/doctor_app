@@ -1,6 +1,6 @@
 import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/constants/home_const_get.dart';
-import 'package:doctor_app/widgets/dashboard_widgets/dash_d_body_item.dart';
+import 'package:doctor_app/widgets/dashboard_widgets/dash_t_body_item.dart';
 import 'package:doctor_app/widgets/dashboard_widgets/dash_top_container.dart';
 import 'package:flutter/material.dart';
 
@@ -33,12 +33,12 @@ class PHomeScreen extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      DashDBodyItem(
+                      DashTBodyItem(
                         count: 1.toString(),
                         icon: Icons.schedule_send_outlined,
                         title: 'Total Appoinments',
                       ),
-                      DashDBodyItem(
+                      DashTBodyItem(
                         count: 01.toString(),
                         icon: Icons.calendar_today,
                         title: 'Next Schedule',
@@ -48,12 +48,12 @@ class PHomeScreen extends StatelessWidget {
                   const SizedBox(height: 7),
                   Row(
                     children: [
-                      DashDBodyItem(
+                      DashTBodyItem(
                         count: 13.toString(),
                         icon: Icons.home_mini,
                         title: 'Your Clients',
                       ),
-                      DashDBodyItem(
+                      DashTBodyItem(
                         count: 2600.toString(),
                         icon: Icons.money_outlined,
                         title: 'Pay Bills',
@@ -61,7 +61,7 @@ class PHomeScreen extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 7),
-                  const DashDBodyItem(
+                  const DashTBodyItem(
                     count: '${63} %',
                     icon: Icons.nature_people_outlined,
                     title: 'Profile Complete',
